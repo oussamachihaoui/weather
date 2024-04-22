@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Weather</title>
 </head>
 <body>
     
+    <div class="mx-auto p-4 bg-zinc-100 h-screen flex justify-center ">
+    <div class="flex flex-wrap items-center ">
+        <div class="w-full   px-2 ">
+            <div class="bg-gray-900 text-white relative min-w-0 break-words rounded-lg overflow-hidden shadow-sm mb-4 w-full bg-white dark:bg-gray-600">
+
+
+                <div class="px-6 py-6 relative">
+                    <div class="flex mb-4 justify-between items-center">
+                        <div>
+                            <!--    city  -->
+                            <h5 class=" city mb-0 font-medium text-xl"> </h5> 
+
+                            <!-- the actual weather -->
+                            <h6 class=" date mb-0"></h6><small class="weather"></small>
+
+                        </div>
+                       
+                        <!-- today tempurature -->
+                        <div class="text-right">
+                            <h3 class="todayTempurature font-bold text-4xl mb-0"> <span>&deg;</span></h3>
+                        </div>
+
+                    </div>
+                    <div class="block sm:flex justify-between items-center flex-wrap">
+
+                         <!-- today tempurature -->
+                        <div class="w-full sm:w-1/2">
+                            <div class="flex mb-2 justify-between items-center"><span>Temperature</span><small class=" todayTempurature px-2 inline-block">&nbsp;&deg;</small></div>
+                        </div>
+
+                        <!-- feels like -->
+                        <div class="w-full sm:w-1/2">
+                            <div class="flex mb-2 justify-between items-center"><span>Feels like</span><small class=" feelsLike px-2 inline-block">&nbsp;&deg;</small></div>
+                            
+                        </div>
+                        <!-- wind speed -->
+                        <div class="w-full sm:w-1/2">
+                            <div class=" flex mb-2 justify-between items-center"><span>Wind speed</span><small class=" windSpeed px-2 inline-block"></small></div>
+                        </div>
+                        <!-- humidity -->
+                        <div class="w-full sm:w-1/2">
+                            <div class="  flex mb-2 justify-between items-center"><span>Relative humidity</span><small class=" humidity px-2 inline-block"></small></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
